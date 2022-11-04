@@ -1,11 +1,22 @@
-<h1>Colin Riddell</h1>
-<div>
-  Colin boasts well over a decade's experience in Scotland's technology scene as
-  a senior software engineer. He developed his passion for technical education
-  and careers after serving as a lead instructor at CodeClan, Scotland's largest
-  coding bootcamp.
-</div>
+---
+import Layout from "../layouts/Layout.astro";
+---
 
+<Layout title="Colin Riddell">
+  <main>
+    <h1>Colin Riddell</h1>
+    <img src="colin-headshot.png" class="headshot" />
+    <div>
+      Colin boasts well over a decade's experience in Scotland's technology
+      scene as a senior software engineer. He developed his passion for
+      technical education and careers after serving as a lead instructor at
+      CodeClan, Scotland's largest coding bootcamp.
+    </div>
+    <ul>
+      <li>Twitter</li>
+    </ul>
+  </main>
+</Layout>
 <style>
   main {
     margin: auto;
@@ -41,5 +52,9 @@
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+  }
+  .headshot {
+    max-width: 20vw;
+    max-height: 20vh;
   }
 </style>

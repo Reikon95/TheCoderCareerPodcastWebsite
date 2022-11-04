@@ -1,12 +1,23 @@
-<main>
-  <h1>Cameron Blackwood</h1>
-  <div>
-    Cameron is a software engineer and former technical recruiter. After
-    learning about software engineering from candidates he worked with, he was
-    inspired and broke into software engineering after teaching himself
-    Javascript.
-  </div>
-</main>
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cameron Blackwood">
+  <main>
+    <h1>Cameron Blackwood</h1>
+    <img src="camprofile.png" class="headshot" />
+
+    <div>
+      Cameron is a software engineer and former technical recruiter. After
+      learning about software engineering from candidates he worked with, he was
+      inspired and broke into software engineering after teaching himself
+      Javascript.
+    </div>
+    <ul>
+      <li>Twitter</li>
+    </ul>
+  </main>
+</Layout>
 
 <style>
   main {
@@ -43,5 +54,9 @@
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+  }
+  .headshot {
+    max-width: 20vw;
+    max-height: 20vh;
   }
 </style>

@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
+<div><a href="/">Back Home</a></div>
 <Layout title="Cameron Blackwood">
   <main>
     <h1>Cameron Blackwood</h1>
@@ -13,9 +14,15 @@ import Layout from "../layouts/Layout.astro";
       inspired and broke into software engineering after teaching himself
       Javascript.
     </div>
-    <ul>
-      <li>Twitter</li>
-    </ul>
+    <div>
+      <a href="https://www.linkedin.com/in/cameron-blackwood/" target="_blank"
+        >LinkedIn</a
+      >
+      <a href="https://www.twitter.com/camblackwood95" target="_blank"
+        >Twitter</a
+      >
+      <a href="mailto:cameron@thecodercareer.com" target="_blank">Email</a>
+    </div>
   </main>
 </Layout>
 
@@ -29,6 +36,12 @@ import Layout from "../layouts/Layout.astro";
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
   .text-gradient {
     background-image: var(--accent-gradient);

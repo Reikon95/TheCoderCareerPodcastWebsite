@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<div><a href="/">Back Home</a></div>
+
+<Layout title="Contact">
+  <main>
+    <h1>Contact</h1>
+    <h2>Interested in Sponsoring the Show or Being Featured?</h2>
+
+    <div>
+      To get in touch about sponsoring the podcast or being on the show as a
+      guest, <a href="mailto:cameron@thecodercareer.com"
+        >please email cameron@thecodercareer.com</a
+      >. We have a number of options and would love to hear proposals for
+      products and tools that our audience will be into.
+    </div>
+  </main>
+</Layout>
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
